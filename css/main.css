@@ -97,8 +97,62 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+p{
+	margin:0;
+}
 
+#topContainer{
+	background: #e0e0e0;
+}
 
+.topButtonsText, .topButtonsIcon{
+	background: #73A7CC;
+	padding: 13px 8%;
+	border: none;
+	font-weight: 700;
+	color: #000;
+	font-size: 14px;
+	-webkit-transition: background 0.5s;
+    transition: background 0.5s;
+}
+
+.topButtonsText:hover, .topButtonsIcon:hover{
+	background: #5397ac;
+}
+
+#textInputPatientSeatch{
+ 	border: 1px solid #ccc;
+    height: 30px;
+    padding: 3px 0.5%;
+    width: 25%;
+}
+
+ #searchButton{
+ 	height: 38px;
+ 	width: 38px;
+ 	margin-left: -38px; 
+ 	background: none;
+ 	border: none;
+ }
+
+ #searchButton img{
+ 	height: 28px;
+ 	width: 28px;
+ 	margin-top: -2px;	
+ }
+
+.topButtonsIcon{
+	padding: 13px;	
+}
+
+#buttonFavourites img{
+	height: 18px;
+	width: 20px;
+}
+.pullDown{
+	float: none;
+	clear: both;
+}
 
 
 

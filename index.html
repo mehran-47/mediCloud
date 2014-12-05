@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>MediCloud</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -22,14 +22,25 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+        <div id="mainContainer">
+        	<div id="topContainer">
+	        	<button id="buttonPatients" class="topButtonsText">PATIENT LIST</button>
+	        	<button id="buttonFavourites" class="topButtonsIcon"><img src="./img/icons/icon_result.png"></button>
+	        	<button id="buttonCreatePatients" class="topButtonsText">NEW PATIENT</button>
+	        	<input type="text" id="textInputPatientSeatch"><button id="searchButton"><img src="img/icons/icon_search.png"></button></input>
+	        	<div class="pullDown"></div>
+	        <div>
+	        <div id="tableLoader"></div>        	
+        </div>
 
+        <!-- Not going to use jQuery ATM
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        -->
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+		
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. 
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
@@ -37,6 +48,7 @@
             e.src='//www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X');ga('send','pageview');
+        -->
         </script>
     </body>
 </html>
