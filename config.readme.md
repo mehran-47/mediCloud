@@ -11,3 +11,5 @@
 	AllowOverride None
 	Require all granted	
 </Directory>
+# restart apache
+# $sudo service apache2 restart
