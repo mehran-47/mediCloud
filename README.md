@@ -5,12 +5,14 @@
  $chmod 755 -R -R /var/www/html
  $cd /var/www/html 
  $git clone https://github.com/mehran-47/mediCloud.git
-### Changes in the apache config file located at "/etc/apache2/apache2.conf": add the XML object/notation below.
+### Enable CGI for apache
+#### Changes in the apache config file located at "/etc/apache2/apache2.conf": add the XML object/notation below.
 <Directory /var/www/>
 	Options Indexes FollowSymLinks ExecCGI
 	AddHandler cgi-script .py
 	AllowOverride None
 	Require all granted	
 </Directory>
-### restart apache
-### $sudo service apache2 restart
+ $sudo a2enmod cgi
+#### restart apache
+$sudo service apache2 restart
