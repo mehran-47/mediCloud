@@ -97,12 +97,21 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body,p, h1,h2,h3,button, input{
+    font-family: 'Open Sans', sans-serif;
+}
+
+button:focus{
+    outline: 0;
+}
+
 p{
 	margin:0;
 }
 
 #topContainer{
 	background: #e0e0e0;
+    position: relative;
 }
 
 .topButtonsText, .topButtonsIcon{
@@ -117,28 +126,46 @@ p{
 }
 
 .topButtonsText:hover, .topButtonsIcon:hover{
-	background: #5397ac;
+	background: #3993CC;
 }
 
 #textInputPatientSeatch{
  	border: 1px solid #ccc;
-    height: 30px;
+    height: 31px;
     padding: 3px 0.5%;
     width: 25%;
+    margin: 3px 5px 0 0;
+    float: right;
+    transition: border 0.5s ease;
+    -webkit-transition: border 0.5s ease;
 }
 
- #searchButton{
- 	height: 38px;
- 	width: 38px;
- 	margin-left: -38px; 
+#textInputPatientSeatch:focus{
+    border: 1px solid #666;
+}
+
+ #buttonSearch{
  	background: none;
- 	border: none;
+    border: medium;
+    height: 38px;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    width: 38px;
+    z-index: 10;
  }
 
- #searchButton img{
+ #buttonSearch img{
  	height: 28px;
  	width: 28px;
  	margin-top: -2px;	
+ }
+
+ .topButtonsText img{
+    height: 18px;
+    width: 18px;
+    padding-right: 5px;
+    margin-top: -2px;
  }
 
 .topButtonsIcon{
@@ -149,22 +176,39 @@ p{
 	height: 18px;
 	width: 20px;
 }
+
 .pullDown{
 	float: none;
 	clear: both;
 }
 
+#patientList{
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
 
+#patientList td, #patientList th{
+    padding: 8px 5px;
+    border-bottom: solid 1px #ccc;
+    border-left: solid 1px #ccc;
+    -webkit-transition: background 0.5s;
+    transition: background 0.5s;
+}
 
+#patientList th{
+    background: #2C404C;
+    border-bottom: solid 1px #888;
+    border-left: solid 1px #888;
+    color: #fff;
+    font-weight: normal;
+}
 
-
-
-
-
-
-
-
-
+#patientList tr:hover td{
+    background: #C1E4FF;
+    border-bottom: solid 1px #fff;
+    border-left: solid 1px #fff;
+}
 
 
 /* ==========================================================================

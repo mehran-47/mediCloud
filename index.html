@@ -11,26 +11,75 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+            <p class="browsehappy">You are using an <strong>outhated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
         <!-- Add your site or application content here -->
         <div id="mainContainer">
         	<div id="topContainer">
-	        	<button id="buttonPatients" class="topButtonsText">PATIENT LIST</button>
+	        	<button id="buttonPatients" class="topButtonsText"><img src="./img/icons/icon_document.png">PATIENT LIST</button>
 	        	<button id="buttonFavourites" class="topButtonsIcon"><img src="./img/icons/icon_result.png"></button>
-	        	<button id="buttonCreatePatients" class="topButtonsText">NEW PATIENT</button>
-	        	<input type="text" id="textInputPatientSeatch"><button id="searchButton"><img src="img/icons/icon_search.png"></button></input>
+	        	<button id="buttonCreatePatients" class="topButtonsText"><img src="./img/icons/icon_document.png">NEW PATIENT</button>
+                <button id="buttonSearch"><img src="img/icons/icon_search.png"></button>
+	        	<input type="text" id="textInputPatientSeatch"></input>
 	        	<div class="pullDown"></div>
-	        <div>
-	        <div id="tableLoader"></div>        	
+	        </div>
+	        <div id="tableLoader">
+                <table id="patientList">
+                    <tr>
+                        <th>NAME</th>
+                        <th>VISIT ID</th>
+                        <th>DOB</th>
+                        <th>ROOM</th>
+                        <th>STATUS</th>
+                        <th>ARRIVAL</th>
+                        <th>PROVIDER</th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>        	
         </div>
 
         <!-- Not going to use jQuery ATM
