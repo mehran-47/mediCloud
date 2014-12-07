@@ -130,7 +130,7 @@ p{
 }
 
 #textInputPatientSeatch{
- 	border: 1px solid #ccc;
+ 	border: 2px solid #ccc;
     height: 31px;
     padding: 3px 0.5%;
     width: 25%;
@@ -141,7 +141,7 @@ p{
 }
 
 #textInputPatientSeatch:focus{
-    border: 1px solid #666;
+    border: 2px solid #666;
 }
 
  #buttonSearch{
@@ -202,12 +202,17 @@ p{
     border-left: solid 1px #888;
     color: #fff;
     font-weight: normal;
+    cursor: default;
 }
 
 #patientList tr:hover td{
     background: #C1E4FF;
     border-bottom: solid 1px #fff;
     border-left: solid 1px #fff;
+}
+
+#patientList tr{
+	cursor: pointer;
 }
 
 
