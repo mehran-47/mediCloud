@@ -9,19 +9,20 @@ md.onLoadTasks = function(){
 //Load all patients AJAX req-response
 md.loadAllPatients = {}
 md.loadAllPatients.callbackFunc = function(responseText){
+	//alert(responseText);
 	var patientsObj = JSON.parse(responseText);
-	var patientsTable = document.getElementById("patientList");	
+	var patientsTable = document.getElementById("patientList");
 	patientsTable.innerHTML = "<tr><th>NAME</th><th>VISIT ID</th><th>DOB</th><th>ROOM</th><th>STATUS</th><th>ARRIVAL</th><th>PROVIDER</th></tr>";
-	for(var i=0; i<patientsObj.length; i++){
+	for(var patientKey in patientsObj){
 		var oneRow = document.createElement('tr');
 		oneRow.innerHTML = 
-			"<td>"+patientsObj[i]["name"]+"</td>"+
-			"<td>"+patientsObj[i]["dob"]+"</td>"+
-			"<td>"+patientsObj[i]["visit_id"]+"</td>"+
-			"<td>"+patientsObj[i]["room"]+"</td>"+
-			"<td>"+patientsObj[i]["status"]+"</td>"+
-			"<td>"+patientsObj[i]["arrival"]+"</td>"+
-			"<td>"+patientsObj[i]["provider"]+"</td>";
+			"<td>"+patientsObj[patientKey]["name"]+"</td>"+
+			"<td>"+patientKey+"</td>"+
+			"<td>"+patientsObj[patientKey]["dob"]+"</td>"+
+			"<td>"+patientsObj[patientKey]["room"]+"</td>"+
+			"<td>"+patientsObj[patientKey]["status"]+"</td>"+
+			"<td>"+patientsObj[patientKey]["arrival"]+"</td>"+
+			"<td>"+patientsObj[patientKey]["provider"]+"</td>";
 		patientsTable.appendChild(oneRow);
 	}
 }
