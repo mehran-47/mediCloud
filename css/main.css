@@ -158,7 +158,8 @@ p{
  #buttonSearch img{
  	height: 28px;
  	width: 28px;
- 	margin-top: -2px;	
+ 	margin-top: -2px;
+ 	background: #fff;
  }
 
  .topButtonsText img{
@@ -214,6 +215,39 @@ p{
 #patientList tr{
 	cursor: pointer;
 }
+
+.coverDiv{
+	position: absolute;
+	top: 46px;
+	left: 0;
+	height: 100%;
+	width:100%;
+	z-index: 11;
+	background: #fff;
+	opacity: 1;
+	transition-duration:0.5s;
+}
+
+#resultsTablesHolder table{
+	width: 100%;
+	text-align: center;
+}
+
+.resultsHeader{
+	text-align: center;
+	background: #73a7cc;
+	font-weight: bold;
+}
+
+#resultsTablesHolder table td, #resultsTablesHolder table th{
+	border-bottom: 1px solid #73a7cc;
+    border-left: 1px solid #73a7cc;
+    padding: 8px 3px;
+    transition: background 0.5s ease 0s;
+}
+ #resultsTablesHolder table th{
+ 	border-top:solid 15px #73a7cc;
+ }
 
 
 /* ==========================================================================

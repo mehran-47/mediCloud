@@ -12,6 +12,9 @@ def resetDb():
 	"9793":{"name":"Pegg, Simon", "dob":"14-Feb-70", "room":"8S-850-B", "status":"ADM", "arrival":"1-Jan-14", "provider":"Chase, Robert"},\
 	"2384":{"name":"Neeson, Liam", "dob":"07-Jun-52", "room":"8S-849-A", "status":"ADM", "arrival":"1-Jan-14", "provider":"Cameron, Allison "}
 	}
+	patienHistory={
+	
+	}
 	with sh.open('../shelveDB', writeback=True) as db:
 		dbUpdate(db, allpatients ,'allpatients')
 
